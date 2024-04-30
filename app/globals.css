@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+ 
+@layer base {
+  :root {
+    /* --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+ 
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+ 
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+ 
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+ 
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+ 
+    --radius: 0.5rem; */
+
+
+    --background: 39, 100%, 85%; /* プリンの本体の色、淡い黄褐色 */
+    --foreground: 0, 0%, 10%; /* テキストの色、ほぼ黒 */
+
+    --card: 39, 100%, 85%; /* カードの背景色、プリンの本体色 */
+    --card-foreground: 0, 0%, 10%; /* カードのテキスト色、ほぼ黒 */
+
+    --popover: 39, 100%, 85%; /* ポップオーバーの背景色、プリンの本体色 */
+    --popover-foreground: 0, 0%, 10%; /* ポップオーバーのテキスト色、ほぼ黒 */
+
+    --primary: 25, 75%, 50%; /* プライマリ要素の色、キャラメルソースの色 */
+    --primary-foreground: 0, 0%, 10%; /* プライマリ要素のテキスト色、ほぼ黒 */
+
+    --secondary: 39, 60%, 70%; /* セカンダリ要素の色、プリンのやや明るい色 */
+    --secondary-foreground: 0, 0%, 10%; /* セカンダリ要素のテキスト色、ほぼ黒 */
+
+    --muted: 39, 30%, 90%; /* 非強調要素の色、非常に淡いプリン色 */
+    --muted-foreground: 0, 0%, 10%; /* 非強調要素のテキスト色、ほぼ黒 */
+
+    --accent: 25, 75%, 50%; /* アクセント色、キャラメルソースの色 */
+    --accent-foreground: 0, 0%, 10%; /* アクセント要素のテキスト色、ほぼ黒 */
+
+    --destructive: 0, 100%, 50%; /* 破壊的要素の色、明るい赤 */
+    --destructive-foreground: 0, 0%, 10%; /* 破壊的要素のテキスト色、ほぼ黒 */
+
+    --border: 25, 75%, 50%; /* 境界線の色、キャラメルソースの色 */
+    --input: 39, 100%, 85%; /* 入力フィールドの背景色、プリンの本体色 */
+    --ring: 25, 75%, 50%; /* フォーカスリングの色、キャラメルソースの色 */
+
+    --radius: 0.5rem; /* 角丸の半径 */
+
+  }
+ 
+  .dark {
+    /* --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+ 
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+ 
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+ 
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+ 
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+ 
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+ 
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%; */
+
+    --background: 39, 100%, 85%; /* プリンの本体の色、淡い黄褐色 */
+    --foreground: 0, 0%, 10%; /* テキストの色、ほぼ黒 */
+
+    --card: 39, 100%, 85%; /* カードの背景色、プリンの本体色 */
+    --card-foreground: 0, 0%, 10%; /* カードのテキスト色、ほぼ黒 */
+
+    --popover: 39, 100%, 85%; /* ポップオーバーの背景色、プリンの本体色 */
+    --popover-foreground: 0, 0%, 10%; /* ポップオーバーのテキスト色、ほぼ黒 */
+
+    --primary: 25, 75%, 50%; /* プライマリ要素の色、キャラメルソースの色 */
+    --primary-foreground: 0, 0%, 10%; /* プライマリ要素のテキスト色、ほぼ黒 */
+
+    --secondary: 39, 60%, 70%; /* セカンダリ要素の色、プリンのやや明るい色 */
+    --secondary-foreground: 0, 0%, 10%; /* セカンダリ要素のテキスト色、ほぼ黒 */
+
+    --muted: 39, 30%, 90%; /* 非強調要素の色、非常に淡いプリン色 */
+    --muted-foreground: 0, 0%, 10%; /* 非強調要素のテキスト色、ほぼ黒 */
+
+    --accent: 25, 75%, 50%; /* アクセント色、キャラメルソースの色 */
+    --accent-foreground: 0, 0%, 10%; /* アクセント要素のテキスト色、ほぼ黒 */
+
+    --destructive: 0, 100%, 50%; /* 破壊的要素の色、明るい赤 */
+    --destructive-foreground: 0, 0%, 10%; /* 破壊的要素のテキスト色、ほぼ黒 */
+
+    --border: 25, 75%, 50%; /* 境界線の色、キャラメルソースの色 */
+    --input: 39, 100%, 85%; /* 入力フィールドの背景色、プリンの本体色 */
+    --ring: 25, 75%, 50%; /* フォーカスリングの色、キャラメルソースの色 */
+
+    --radius: 0.5rem; /* 角丸の半径 */
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
